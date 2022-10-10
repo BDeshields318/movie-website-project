@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <title>B-Movie</title>
+</head>
+
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">B-Films</h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="index.html">Home</a></li>
+                    <li class="menu-list-item"><a href="./movies/movies.html">Movies</a></li>
+                    <li class="menu-list-item"><a href="./series/series.html">Series</a></li>
+                    <li class="menu-list-item"><a href="./jayce/jayMove.html">Jayce</a></li>
+                    <li class="menu-list-item"><a href="./search/searchMovies.html">Add</a></li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <i class="side-icon fa-solid fa-magnifying-glass"></i>
+        <i class="side-icon fa-solid fa-house-chimney"></i>
+        <i class="side-icon fa-solid fa-clapperboard"></i>
+        <i class="side-icon fa-solid fa-baby"></i>
+        <i class="side-icon fa-solid fa-plus"></i>
+    </div>
+
+    <div class="container movie-container">
+        <div id="results" class="row"></div>
+    </div>
+
+    
+    
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+crossorigin="anonymous">
+</script>
+<script src="index.js"></script>
+</body>
+</html>
