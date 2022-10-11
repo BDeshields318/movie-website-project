@@ -16,46 +16,27 @@
             <div class="logo-container"><h1 class="logo">B-Films</h1></div>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item"><a href="../index.html">Home</a></li>
-                    <li class="menu-list-item"><a href="./movies/movies.html">Movies</a></li>
-                    <li class="menu-list-item"><a href="./series/series.html">Series</a></li>
-                    <li class="menu-list-item"><a href="./jayce/jayMove.html">Jayce</a></li>
-                    <li class="menu-list-item"><a href="addContent.html">Add</a></li> 
+                    <li class="menu-list-item"><a href="/index.html">Home</a></li>
+                    <!-- <li class="menu-list-item"><a href="/movies/movies.html">Movies</a></li> -->
+                    <!-- <li class="menu-list-item"><a href="./series/series.html">Series</a></li> -->
+                    <!-- <li class="menu-list-item"><a href="./jayce/jayMove.html">Jayce</a></li>  -->
+                    <li class="menu-list-item"><a href="/search/searchMovies.html">Search</a></li> 
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="sidebar">
-        <i class="side-icon fa-solid fa-magnifying-glass"></i>
-        <i class="side-icon fa-solid fa-house-chimney"></i>
-        <i class="side-icon fa-solid fa-clapperboard"></i>
-        <i class="side-icon fa-solid fa-tv"></i>
-        <i class="side-icon fa-solid fa-baby"></i>
-        <i class="side-icon fa-solid fa-plus"></i>
+        <a href="/search/searchMovies.html"><i class="side-icon fa-solid fa-magnifying-glass"></i></a>
+        <a href="/index.html"><i class="side-icon fa-solid fa-house-chimney"></i></a>
+        <!-- <i class="side-icon fa-solid fa-clapperboard"></i> -->
+        <!-- <i class="side-icon fa-solid fa-baby"></i> -->
     </div>
 
-   
-    
     <div class="container">
         <div id="movie" class="well"></div>
     </div>
     
-    <script id="movieTemplate" type="text/template">
-        <div class="row my-3 t-3 card-movie" style="width: 18rem">
-            <div class="col-md-12 mb-4">
-                <div class="card border-0 shadow">
-                    <img src="https://i.pravatar.cc/400?img=48" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-0" id="title">Title in Template</h5>
-                        <div class="card-genre text-white">Genre in Template</div>
-                        <div class="card-year text-white" >Year in Template</div>
-                        <button type="button" onClick = "" id="addMovie" class="btn btn-primary mt-2">Add</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 

@@ -1,5 +1,6 @@
 $(document).ready(() => {
   for (let i = 0; i < localStorage.length; i++) {
+    //A for loop that goes through the movies in local storage and appends them to the page
     const key = localStorage.key(i);
 
     var item = JSON.parse(localStorage.getItem(key));
@@ -16,8 +17,6 @@ $(document).ready(() => {
         </div>
       </div>
         `;
-
     $("#results").append(newMovies);
-    console.log("the title", newMovies);
   }
 });

@@ -1,5 +1,6 @@
 $(document).ready(() => {
   $("#searchForm").on("submit", (e) => {
+    // gets the value of whats typed in searchbar and send it to the function getMovies()
     let searchText = $("#searchText").val();
     getMovies(searchText);
     e.preventDefault();
@@ -17,9 +18,8 @@ function getMovies(searchText) {
       console.log(data);
 
       var html = $("#movieTemplate").html();
-      var clone = $(html).clone();
+      var clone = $(html).clone(); // take the template that in the script tag of SearchMovies.html and clones the html
 
-      // addMovies(data);
       clone.find(".card-img-top").attr("src", data.Poster);
       clone.find(".card-title").text(data.Title);
       clone.find(".card-year").text(data.Year);
@@ -70,11 +70,6 @@ function getMovie() {
           <li class="list-group-item"><strong>Rating:</strong> ${data.imdbRating}</li>
         </ul>
       </div>
-      <form>
-        <label for="rate">Rate</label><br>
-        <input type="text" id="rate" name="rate" placeholder="enter number"><br>
-        <input type="submit" value="Submit">
-      </form>
     </div>
 
     <div class="row">
@@ -92,8 +87,6 @@ function getMovie() {
   });
 }
 
-// let movies = [];
-
 function addMovies(data) {
   var id = data.imdbID;
 
@@ -106,9 +99,6 @@ function addMovies(data) {
     Rating: data.imdbRating,
     Id: id,
   };
-
-  // movies.push(title, year, genre, id, rated, image, rating);
-  // console.log(movies);
 
   localStorage.setItem(id, JSON.stringify(movies));
 }
