@@ -17,7 +17,7 @@ Personal movie database where you can search and store movies that you watched. 
 
 
 
-Takes two numbers and returns the sum.
+
 
 
 ## Authors
@@ -25,7 +25,5 @@ Takes two numbers and returns the sum.
 - [@BDeshields318](https://www.github.com/BDeshields318)
 
 
-## Demo
 
-Insert gif or link to demo
 
